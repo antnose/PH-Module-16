@@ -19,9 +19,11 @@ const laptop = {
     brand: "ASUS",
     model: "RTX 5090ti",
     price: 490000,
-    color: {
-      base: "White",
-    },
   },
 };
-console.log(laptop.gpu.color.base);
+// console.log(laptop.gpu.color.base);
+
+// Loop on object
+for (let i in laptop) {
+  console.log(`Key ${i} : ${laptop[i]} `);
+}
